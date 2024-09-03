@@ -1,0 +1,7 @@
+<!-- src/app/task/task.component.html -->
+<div *ngIf="task">
+    <h2 [appTaskStatusColor]="task.state">{{ task.title }}</h2>
+    <p>{{ task.description }}</p>
+    <p>Date de création : {{ task.createdAt | dateFormat }}</p>
+    <span>{{ task.state }}</span>
+  </div>
